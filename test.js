@@ -17,6 +17,14 @@ test('sender with checksum', function (t) {
   t.is(contractAddress, '0x9ee59cc206ac17d7d0ec1073e2773651ed7ab7b7')
 })
 
+test('nonce is a string', function (t) {
+  const sender = '0xddc143fa0f77ae51021c3521d358604b20ab860a'
+  const nonce = '0x0'
+  const contractAddress = computeContractAddress(sender, nonce)
+
+  t.is(contractAddress, '0x7c6d0c8f963c211786a3a72f9ea03fad75298871')
+})
+
 test.skip('benchmark', function (t) {
   const sender = '0x3fa29f50D7FA913a6E325e99522D1cf561d6A0E3'
 

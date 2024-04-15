@@ -1,6 +1,6 @@
 {
   "name": "compute-contract-address",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Calculate the contract address from a sender before deployment",
   "main": "index.js",
   "scripts": {
